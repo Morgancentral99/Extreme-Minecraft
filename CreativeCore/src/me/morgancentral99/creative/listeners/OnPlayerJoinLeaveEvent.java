@@ -1,10 +1,12 @@
 package me.morgancentral99.creative.listeners;
 
+import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
+import me.morgancentral99.creative.CreativeCore;
 import me.morgancentral99.creative.PlayerOverride;
 
 public class OnPlayerJoinLeaveEvent implements Listener {
@@ -16,6 +18,9 @@ public class OnPlayerJoinLeaveEvent implements Listener {
 	Player p = e.getPlayer();
 	if(p.hasPermission("Server.Staff")) {
 		po.Staff.add(e.getPlayer().getUniqueId().toString());
+	}
+	if(!p.hasPlayedBefore()) {
+		Bukkit.broadcastMessage(CreativeCore.format(CreativeCore.getPrefix() + "Wisp Something can go here"));
 	}
 	}
 
