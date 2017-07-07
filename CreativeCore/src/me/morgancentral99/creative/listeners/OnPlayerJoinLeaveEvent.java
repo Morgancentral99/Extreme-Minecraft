@@ -20,7 +20,7 @@ public class OnPlayerJoinLeaveEvent implements Listener {
 		po.Staff.add(e.getPlayer().getUniqueId().toString());
 	}
 	if(!p.hasPlayedBefore()) {
-		Bukkit.broadcastMessage(CreativeCore.format(CreativeCore.getPrefix() + "Wisp Something can go here"));
+		Bukkit.broadcastMessage(CreativeCore.format(CreativeCore.getPrefix() + p.getDisplayName() +  "has entered the Realm"));
 	}
 	}
 
