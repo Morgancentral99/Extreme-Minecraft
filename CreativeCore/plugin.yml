@@ -1,0 +1,26 @@
+name: CreativeCore
+author: Morgancentral99
+main: me.morgancentral99.creative.CreativeCore
+version: 0.0.1
+commands:
+  author:
+   description: Runs the Version Command
+   usage: /author
+  Discord:
+    description: Runs the Discord get Command
+    usage: /Discord
+  Restart:
+    description: Restarts the Server
+    usage: /restart <args>
+    permission: Creative.Restarter
+  Stop:
+    description: Restarts the Server
+    usage: /Stop <args>
+    permission: Creative.Restarter
+  Staff:
+    description: Staff Chat
+    usage: /Staff <message>
+    permission: Server.Staff
+  Admin:
+    description: Dev Stuff
+    usage: /Admin
